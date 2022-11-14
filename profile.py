@@ -34,7 +34,9 @@ imageList = [
     ('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU18-64-STD', 'UBUNTU 18.04'),
     ('urn:publicid:IDN+emulab.net+image+emulab-ops//CENTOS8S-64-STD',  'CENTOS 8 Stream'),
     ('urn:publicid:IDN+emulab.net+image+emulab-ops//FBSD123-64-STD', 'FreeBSD 12.3'),
-    ('urn:publicid:IDN+emulab.net+image+emulab-ops//FBSD131-64-STD', 'FreeBSD 13.1')]
+    ('urn:publicid:IDN+emulab.net+image+emulab-ops//FBSD131-64-STD', 'FreeBSD 13.1'),
+  ('urn:publicid:IDN+apt.emulab.net+image+nyu-netsec-PG0:gns3-bb-simu0', 'gns3 backbone simu0'),
+]
 
 pc.defineParameter("osImage", "Select OS image",
                    portal.ParameterType.IMAGE,
