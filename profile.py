@@ -29,13 +29,13 @@ pc.defineParameter("nodeCount", "Number of Nodes", portal.ParameterType.INTEGER,
 
 # Pick your OS.
 imageList = [
+    ('urn:publicid:IDN+apt.emulab.net+image+nyu-netsec-PG0:gns3-bb-simu0', 'gns3 backbone simu0'),
     ('default', 'Default Image'),
     ('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD', 'UBUNTU 20.04'),
     ('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU18-64-STD', 'UBUNTU 18.04'),
     ('urn:publicid:IDN+emulab.net+image+emulab-ops//CENTOS8S-64-STD',  'CENTOS 8 Stream'),
     ('urn:publicid:IDN+emulab.net+image+emulab-ops//FBSD123-64-STD', 'FreeBSD 12.3'),
     ('urn:publicid:IDN+emulab.net+image+emulab-ops//FBSD131-64-STD', 'FreeBSD 13.1'),
-  ('urn:publicid:IDN+apt.emulab.net+image+nyu-netsec-PG0:gns3-bb-simu0', 'gns3 backbone simu0'),
 ]
 
 pc.defineParameter("osImage", "Select OS image",
@@ -96,13 +96,13 @@ pc.defineParameter("tempFileSystemSize", "Temporary Filesystem Size",
                    
 # Instead of a size, ask for all available space. 
 pc.defineParameter("tempFileSystemMax",  "Temp Filesystem Max Space",
-                    portal.ParameterType.BOOLEAN, False,
+                    portal.ParameterType.BOOLEAN, True,
                     advanced=True,
                     longDescription="Instead of specifying a size for your temporary filesystem, " +
                     "check this box to allocate all available disk space. Leave the size above as zero.")
 
 pc.defineParameter("tempFileSystemMount", "Temporary Filesystem Mount Point",
-                   portal.ParameterType.STRING,"/mydata",advanced=True,
+                   portal.ParameterType.STRING, "/mnt", advanced=True,
                    longDescription="Mount the temporary file system at this mount point; in general you " +
                    "you do not need to change this, but we provide the option just in case your software " +
                    "is finicky.")
