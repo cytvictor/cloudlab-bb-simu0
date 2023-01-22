@@ -29,7 +29,7 @@ pc.defineParameter("nodeCount", "Number of Nodes", portal.ParameterType.INTEGER,
 
 # Pick your OS.
 imageList = [
-    ('urn:publicid:IDN+apt.emulab.net+image+nyu-netsec-PG0:gns3-bb-simu1:1', 'gns3 eval2 simu'),
+    ('urn:publicid:IDN+apt.emulab.net+image+nyu-netsec-PG0:gns3-bb-simu1:2', 'gns3 eval2 simu'),
     ('default', 'Default Image'),
     ('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU20-64-STD', 'UBUNTU 20.04'),
     ('urn:publicid:IDN+emulab.net+image+emulab-ops//UBUNTU18-64-STD', 'UBUNTU 18.04'),
